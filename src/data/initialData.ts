@@ -1,0 +1,281 @@
+import { DeveloperProfile, ServiceItem, SkillItem, CertificationItem, ProjectItem } from '../types';
+
+export const INITIAL_DEVELOPER: DeveloperProfile = {
+  name: "Sudeep Tharu",
+  role: "Full-Stack Developer · 3D Web Designer · AI Automation Developer",
+  tagline: "I build premium digital experiences that combine thoughtful design, interactive 3D visuals, and practical technology. From responsive websites to AI-powered workflows, I turn ideas into functional digital products.",
+  bio: "I'm a developer and digital designer passionate about creating modern, interactive, and user-focused web experiences. I enjoy solving technical challenges, exploring emerging technologies, and combining clean code with strong visual design. My goal is to build digital products that look exceptional, work smoothly, and solve real problems.",
+  aboutTitle: "Turning Ideas Into Functional Digital Products",
+  avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+  secondaryAvatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+  heroCharacterUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+  statusText: "Open for freelance projects & innovative collaborations",
+  yearsExperience: 3,
+  completedProjects: 28,
+  dedicationRate: 100,
+  resumeUrl: "#",
+  email: "zentratech11@gmail.com",
+  location: "Kathmandu / Remote Worldwide",
+  socials: {
+    github: "https://github.com",
+    linkedin: "https://linkedin.com",
+    twitter: "https://twitter.com",
+    whatsapp: "",
+  },
+};
+
+export const INITIAL_SERVICES: ServiceItem[] = [
+  {
+    id: "service-1",
+    number: "01",
+    title: "Full-Stack Development",
+    description: "Responsive websites and functional web applications built with modern architectures, clean code, and resilient state management.",
+    tags: ["React 19", "Next.js", "TypeScript", "Node.js", "APIs"],
+    iconName: "Code2",
+  },
+  {
+    id: "service-2",
+    number: "02",
+    title: "3D Web Experiences",
+    description: "Immersive websites with interactive visuals, 3D canvases, spatial depth, and buttery smooth motion graphics that captivate visitors.",
+    tags: ["Three.js", "WebGL", "Framer Motion", "Shaders", "Interactive 3D"],
+    iconName: "Box",
+  },
+  {
+    id: "service-3",
+    number: "03",
+    title: "Premium Website Design",
+    description: "Thoughtful layouts, editorial typography, balanced color systems, and polished user experiences crafted with pixel-level precision.",
+    tags: ["UI/UX Architecture", "Design Systems", "Tailwind CSS", "Figma"],
+    iconName: "Palette",
+  },
+  {
+    id: "service-4",
+    number: "04",
+    title: "AI Automation",
+    description: "Practical AI-powered workflows and intelligent agent pipelines that eliminate repetitive work and accelerate business outcomes.",
+    tags: ["Gemini & OpenAI APIs", "Workflow Automation", "Function Calling", "Data Pipelines"],
+    iconName: "Cpu",
+  },
+];
+
+export const INITIAL_SKILLS: SkillItem[] = [
+  { id: "skill-1", name: "Full-Stack (React & Next.js)", category: "frontend", proficiency: 96, iconName: "Code2" },
+  { id: "skill-2", name: "3D Web (Three.js & WebGL)", category: "frontend", proficiency: 90, iconName: "Box" },
+  { id: "skill-3", name: "AI Automation & LLM Workflows", category: "backend", proficiency: 88, iconName: "Cpu" },
+  { id: "skill-4", name: "TypeScript & JavaScript", category: "frontend", proficiency: 94, iconName: "FileCode2" },
+  { id: "skill-5", name: "Tailwind CSS & Motion", category: "design", proficiency: 95, iconName: "Palette" },
+  { id: "skill-6", name: "Node.js & Backend APIs", category: "backend", proficiency: 86, iconName: "Server" },
+  { id: "skill-7", name: "UI/UX & Design Systems", category: "design", proficiency: 91, iconName: "Figma" },
+  { id: "skill-8", name: "Git, CI/CD & Cloud Deployment", category: "tools", proficiency: 84, iconName: "GitBranch" },
+];
+
+export const INITIAL_CERTIFICATIONS: CertificationItem[] = [
+  {
+    id: "cert-1",
+    title: "Frontend Development Professional",
+    issuer: "Google",
+    issueDate: "Jan 2024",
+    verified: true,
+    credentialUrl: "https://google.com",
+    iconName: "Award",
+  },
+  {
+    id: "cert-2",
+    title: "Meta Certified React Developer",
+    issuer: "Meta",
+    issueDate: "Aug 2023",
+    verified: true,
+    credentialUrl: "https://meta.com",
+    iconName: "Sparkles",
+  },
+  {
+    id: "cert-3",
+    title: "Advanced JavaScript Essentials",
+    issuer: "Coursera",
+    issueDate: "Mar 2023",
+    verified: true,
+    credentialUrl: "https://coursera.org",
+    iconName: "FileCheck",
+  },
+  {
+    id: "cert-4",
+    title: "Cloud Practitioner Certified",
+    issuer: "Amazon Web Services",
+    issueDate: "Nov 2023",
+    verified: true,
+    credentialUrl: "https://aws.amazon.com",
+    iconName: "ShieldCheck",
+  },
+];
+
+export const INITIAL_PROJECTS: ProjectItem[] = [
+  {
+    id: "proj-1",
+    title: "TaskFlow",
+    subtitle: "Productivity App UI & Workflow Engine",
+    category: "web",
+    description: "An intuitive collaborative task management platform with real-time kanban boards, timeline scheduling, and telemetry analytics.",
+    fullOverview: "TaskFlow delivers lightning-fast task orchestration for high-velocity software teams. Built with optimistic UI mutations, drag-and-drop state machines, and microsecond keyboard shortcuts.",
+    keyFeatures: [
+      "Dynamic drag-and-drop kanban boards with swimlanes",
+      "Keyboard-first navigation and command palette",
+      "Customizable team dashboards and progress burndowns",
+      "Zero-latency optimistic state updates"
+    ],
+    techStack: ["React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "Zustand"],
+    imageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
+    liveDemoUrl: "https://example.com/taskflow",
+    githubUrl: "https://github.com/example/taskflow",
+    metrics: "+42% Team Efficiency across 1,200 active users",
+    featured: true,
+  },
+  {
+    id: "proj-2",
+    title: "Nexora",
+    subtitle: "Enterprise Admin & Revenue Analytics",
+    category: "dashboard",
+    description: "Multi-tenant financial analytics dashboard featuring deep revenue breakdowns, cohort retention graphs, and user management.",
+    fullOverview: "Nexora was architected to give SaaS executives comprehensive insight into recurring revenue, churn indicators, and subscription lifecycles, rendering dense data streams in under 80ms.",
+    keyFeatures: [
+      "Interactive SVG revenue breakdowns and cohort heatmaps",
+      "Multi-role user permission hierarchies",
+      "Automated CSV/PDF compliance reporting exports",
+      "Instant multi-currency exchange rate conversions"
+    ],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "Lucide"],
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    liveDemoUrl: "https://example.com/nexora",
+    githubUrl: "https://github.com/example/nexora",
+    metrics: "Over $8.4M tracked monthly volume with 99.98% uptime",
+    featured: true,
+  },
+  {
+    id: "proj-3",
+    title: "TravelEase",
+    subtitle: "Immersive Travel Booking Platform",
+    category: "web",
+    description: "Modern travel discovery portal with interactive regional guides, smart itinerary planners, and seamless instant booking.",
+    fullOverview: "Designed with an editorial travel aesthetic, TravelEase lets adventurers explore handpicked destinations, review community notes, and build customizable day-by-day itineraries with currency calculations.",
+    keyFeatures: [
+      "Dynamic destination search with smart filter facets",
+      "Interactive multi-day visual itinerary builder",
+      "High-resolution photographic storytelling carousels",
+      "Mobile-optimized responsive booking checkout"
+    ],
+    techStack: ["React", "Tailwind CSS", "Vite", "Motion"],
+    imageUrl: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
+    liveDemoUrl: "https://example.com/travelease",
+    githubUrl: "https://github.com/example/travelease",
+    metrics: "18,000+ Bookings processed with 4.9/5 star satisfaction",
+    featured: true,
+  },
+  {
+    id: "proj-4",
+    title: "FitLife",
+    subtitle: "Cross-Platform Fitness Tracking Experience",
+    category: "mobile",
+    description: "Health and workout companion delivering custom training schedules, biometric progress tracking, and nutrition goals.",
+    fullOverview: "FitLife empowers athletes of all levels to set measurable targets, log daily workouts with precise interval timers, and visualize muscle group recovery over time with beautiful charts.",
+    keyFeatures: [
+      "Comprehensive exercise library with form breakdown videos",
+      "Custom interval workout timer with audio cues",
+      "Caloric intake and macronutrient milestone trackers",
+      "Offline-first sync capabilities"
+    ],
+    techStack: ["React", "TypeScript", "Tailwind CSS", "PWA"],
+    imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+    liveDemoUrl: "https://example.com/fitlife",
+    githubUrl: "https://github.com/example/fitlife",
+    metrics: "Over 45,000 completed workout sessions logged",
+    featured: true,
+  },
+  {
+    id: "proj-5",
+    title: "PulseCommerce",
+    subtitle: "Headless E-Commerce Storefront",
+    category: "web",
+    description: "Ultra-fast headless online store with instant search indexing, cart drawer persistence, and streamlined checkout.",
+    fullOverview: "Engineered for sub-100ms page transitions, PulseCommerce blends a minimalist luxury aesthetic with rock-solid checkout reliability.",
+    keyFeatures: [
+      "Instant client-side catalog filtering and faceted search",
+      "Persisted cart drawer with real-time stock validations",
+      "Responsive thumbnail gallery with high-res zoom",
+      "Accessible keyboard navigation across all product cards"
+    ],
+    techStack: ["React", "Tailwind CSS", "TypeScript", "Vite"],
+    imageUrl: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
+    liveDemoUrl: "https://example.com/pulsecommerce",
+    githubUrl: "https://github.com/example/pulsecommerce",
+    metrics: "3.2x faster checkout conversion than previous storefront",
+    featured: false,
+  },
+  {
+    id: "proj-6",
+    title: "CloudScale UI",
+    subtitle: "Cloud Infrastructure Monitoring Suite",
+    category: "dashboard",
+    description: "Real-time Kubernetes cluster monitoring console with live node metrics, latency histograms, and alert dispatching.",
+    fullOverview: "A mission-critical dashboard giving DevOps teams real-time visibility into microservice health, memory thresholds, and pod deployments.",
+    keyFeatures: [
+      "Live updating node topology and CPU/RAM charts",
+      "Configurable threshold alert triggers and notifications",
+      "Container log viewer with regex search and syntax highlighting",
+      "Dark-first high-contrast UI for command centers"
+    ],
+    techStack: ["React", "Tailwind CSS", "TypeScript", "WebSocket Client"],
+    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    liveDemoUrl: "https://example.com/cloudscale",
+    githubUrl: "https://github.com/example/cloudscale",
+    metrics: "Monitored 350+ microservice pods across 4 continents",
+    featured: false,
+  },
+];
+
+export const IMAGE_PRESETS = [
+  {
+    label: "3D Spatial Tech Artwork",
+    url: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    category: "3D Art",
+  },
+  {
+    label: "Professional Male Developer Avatar",
+    url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+    category: "Avatar",
+  },
+  {
+    label: "Friendly Tech Engineer Portrait",
+    url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+    category: "Avatar",
+  },
+  {
+    label: "Creative Designer Avatar",
+    url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+    category: "Avatar",
+  },
+  {
+    label: "Modern SaaS Dashboard Mockup",
+    url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    category: "Project",
+  },
+  {
+    label: "Productivity App Workspace UI",
+    url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
+    category: "Project",
+  },
+  {
+    label: "Travel & Lifestyle Photography",
+    url: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
+    category: "Project",
+  },
+  {
+    label: "Mobile App Wireframe & UI",
+    url: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+    category: "Project",
+  },
+  {
+    label: "Data Center & Cloud Infrastructure",
+    url: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    category: "Project",
+  },
+];
